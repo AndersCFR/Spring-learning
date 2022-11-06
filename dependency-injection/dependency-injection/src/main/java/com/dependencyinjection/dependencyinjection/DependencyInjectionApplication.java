@@ -2,15 +2,24 @@ package com.dependencyinjection.dependencyinjection;
 
 import com.dependencyinjection.dependencyinjection.atributo.Coche;
 import com.dependencyinjection.dependencyinjection.atributo.Motor;
+import com.dependencyinjection.dependencyinjection.autowire.AreaCalculatorService;
+import com.dependencyinjection.dependencyinjection.lifecycle.ExplicitBean;
+import com.dependencyinjection.dependencyinjection.lifecycle.LifeCycleBean;
+import com.dependencyinjection.dependencyinjection.profiles.EnvironmentService;
 import com.dependencyinjection.dependencyinjection.qualifiers.Animal;
 import com.dependencyinjection.dependencyinjection.qualifiers.Nido;
 import com.dependencyinjection.dependencyinjection.qualifiers.Pajaro;
 import com.dependencyinjection.dependencyinjection.qualifiers.Perro;
+import com.dependencyinjection.dependencyinjection.scopes.ScopeExampleService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.expression.Expression;
+import org.springframework.expression.ExpressionParser;
+import org.springframework.expression.spel.standard.SpelExpressionParser;
 
 @SpringBootApplication
 public class DependencyInjectionApplication {
@@ -47,6 +56,61 @@ public class DependencyInjectionApplication {
 		nido.imprimir();
 
 		// Forma 3, se puede definir un bean por default usando @Primary
+
+		// PROFILES
+		// Existen tres formas de gestionar los perfiles
+
+		//1. Definiendo en el aplication properties, especificando el active profile
+		EnvironmentService environmentService = context.getBean(EnvironmentService.class);
+		log.info("Active environment {}", environmentService.getEnvironment());
+
+		// 2. En el VM argument
+		// 3. Con un decorador en testing
+		// Adicionalmente si ni en propiedades ni en VM se ha definido un perfil
+		// podemos especificar uno por defecto usando "default" en el decorador Profile
+
+		// SCOPES
+		// Por defecto el scope es "singleton"
+		ScopeExampleService scope1 = context.getBean(ScopeExampleService.class);
+		ScopeExampleService scope2 = context.getBean(ScopeExampleService.class);
+
+		log.info("Are beans equal {}", scope1.equals(scope2));
+		log.info("Are beans == {}", scope1 == scope2);
+
+		// EXPLICIT BEANS
+		// Cuando queremos que alguna función sea registrada como bean y dependemos de una implementación final
+		String nombreAplicacion = context.getBean(String.class);
+		log.info("Nombre de la aplicación {}", nombreAplicacion);
+
+		// AUTOWIRE con listas
+		AreaCalculatorService areaCalculatorService = context.getBean(AreaCalculatorService.class);
+		log.info("Area total de todas figuras {}", areaCalculatorService.calcAreas());
+
+		// SPEL
+		// creamos un spel manual para comprobar si la expresión funciona correctamente
+		ExpressionParser expressionParser = new SpelExpressionParser();
+		Expression expression = expressionParser.parseExpression("10 + 78.8");
+		log.info("Expression {}", expression.getValue());
+
+		// LIFECYCLE
+		LifeCycleBean lifeCycleBean = context.getBean(LifeCycleBean.class);
+		// 1. BeanNameAware (Se ejecuta cuando el nombre del bean es asignado)
+		// 2. Se ejecuta el callback de Post Construct
+		// 3. Se ejecuta la sobreescritura de AfterPropertiesSet
+		// 4. Se inicializa la aplicación
+		// 5. Se ejecuta el callback de  Pre Destroy, evento antes de finalizar el bean
+		// 6. Se ejecuta la sobreescritura de DisposableBean
+
+	}
+
+	@Bean
+	public String getApplicationName(){
+		return "AndersCFR";
+	}
+
+	@Bean(initMethod = "init", destroyMethod = "destroyBean")
+	public ExplicitBean getBean(){
+		return new ExplicitBean();
 	}
 
 }

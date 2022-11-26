@@ -1,0 +1,6 @@
+rootProject.name = 'spring_rest'
+/*sourceControl {
+    gitRepository("https://github.com/DiUS/java-faker") {
+        producesModule("com.github.javafaker:javafaker:1.0.2")
+    }
+}*/

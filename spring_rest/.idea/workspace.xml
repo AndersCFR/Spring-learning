@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3fb025a5-01c6-4160-b91a-4ae218cbb485" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/java/com/dependencyinjection/dependencyinjection/DependencyInjectionApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/java/com/dependencyinjection/dependencyinjection/aop/MyAspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/java/com/dependencyinjection/dependencyinjection/aop/MyAspect2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/java/com/dependencyinjection/dependencyinjection/aop/PointcutExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/java/com/dependencyinjection/dependencyinjection/aop/TargetObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/java/com/dependencyinjection/dependencyinjection/atributo/Coche.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/java/com/dependencyinjection/dependencyinjection/atributo/Motor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/java/com/dependencyinjection/dependencyinjection/autowire/AreaCalculatorService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/java/com/dependencyinjection/dependencyinjection/autowire/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/java/com/dependencyinjection/dependencyinjection/autowire/Figure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/java/com/dependencyinjection/dependencyinjection/autowire/Square.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/java/com/dependencyinjection/dependencyinjection/lifecycle/AnderBeanPostProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/java/com/dependencyinjection/dependencyinjection/lifecycle/ExplicitBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/java/com/dependencyinjection/dependencyinjection/lifecycle/LifeCycleBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/java/com/dependencyinjection/dependencyinjection/profiles/DevEnvironment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/java/com/dependencyinjection/dependencyinjection/profiles/EnvironmentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/java/com/dependencyinjection/dependencyinjection/profiles/ProdEnvironment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/java/com/dependencyinjection/dependencyinjection/profiles/QAEnvironment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/java/com/dependencyinjection/dependencyinjection/qualifiers/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/java/com/dependencyinjection/dependencyinjection/qualifiers/Avion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/java/com/dependencyinjection/dependencyinjection/qualifiers/Nido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/java/com/dependencyinjection/dependencyinjection/qualifiers/Pajaro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/java/com/dependencyinjection/dependencyinjection/qualifiers/Perro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/java/com/dependencyinjection/dependencyinjection/qualifiers/volador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/java/com/dependencyinjection/dependencyinjection/scopes/ScopeExampleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/java/config/FigurePropertyConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/main/resources/areas.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependency-injection/dependency-injection/src/test/java/com/dependencyinjection/dependencyinjection/DependencyInjectionApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anders/spring_rest/SpringRestApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anders/spring_rest/config/FakerBeanConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anders/spring_rest/config/SwaggerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anders/spring_rest/controllers/AndersController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anders/spring_rest/controllers/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anders/spring_rest/models/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/anders/spring_rest/services/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/anders/spring_rest/SpringRestApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2HvvRNWRTav46J5v3XseI4IU8dq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/andersoncardenas/Documents/Spring-learning/spring_rest",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="SpringRestApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.anders.spring_rest.SpringRestApplication" />
+      <module name="spring_rest.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.anders.spring_rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SpringRestApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3fb025a5-01c6-4160-b91a-4ae218cbb485" name="Changes" comment="" />
+      <created>1669178362150</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669178362150</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
